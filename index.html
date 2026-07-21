@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京正定私募基金管理合伙企业（有限合伙）— 管理人画像</title>
+    <style>
+        :root {
+            --primary-red: #B22222;
+            --dark-red: #8B0000;
+            --light-red: #FDF2F2;
+            --accent-red: #C41E3A;
+            --text-dark: #1F1F1F;
+            --text-gray: #4A4A4A;
+            --text-light: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-gray: #F8F9FA;
+            --border-light: #E5E7EB;
+            --border-red: #DC2626;
+            --shadow: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-hover: 0 8px 30px rgba(178,34,34,0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: var(--bg-gray);
+            color: var(--text-dark);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
+            color: white;
+            padding: 60px 40px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 50%;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-sub {
+            font-size: 15px;
+            opacity: 0.85;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-date {
+            margin-top: 16px;
+            font-size: 13px;
+            opacity: 0.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        .section {
+            background: var(--bg-white);
+            border-radius: 16px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .section-header {
+            background: var(--light-red);
+            padding: 20px 32px;
+            border-left: 5px solid var(--primary-red);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-header .icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary-red);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark-red);
+            letter-spacing: 0.5px;
+        }
+
+        .section-body {
+            padding: 28px 32px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .info-table th,
+        .info-table td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .info-table th {
+            width: 220px;
+            color: var(--dark-red);
+            font-weight: 600;
+            background: var(--light-red);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            vertical-align: top;
+        }
+
+        .info-table td {
+            color: var(--text-gray);
+            vertical-align: top;
+        }
+
+        .info-table tr:hover td {
+            background: #FEF9F9;
+        }
+
+        .info-table tr:last-child th,
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .strategy-block {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--light-red);
+        }
+
+        .strategy-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .strategy-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--primary-red);
+            margin-bottom: 18px;
+            padding-left: 14px;
+            border-left: 4px solid var(--accent-red);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .strategy-title .tag {
+            font-size: 11px;
+            background: var(--primary-red);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .advantages {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+
+        .advantages li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            color: var(--text-gray);
+            font-size: 14px;
+            border-bottom: 1px dashed var(--border-light);
+        }
+
+        .advantages li:last-child {
+            border-bottom: none;
+        }
+
+        .advantages li::before {
+            content: "▸";
+            position: absolute;
+            left: 12px;
+            color: var(--primary-red);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .tagline-box {
+            background: linear-gradient(135deg, var(--light-red) 0%, #FFF5F5 100%);
+            border: 1px solid rgba(178,34,34,0.12);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .tagline-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-red);
+            border-radius: 12px 0 0 12px;
+        }
+
+        .tagline-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .tagline-text {
+            font-size: 15px;
+            color: var(--text-dark);
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        .disclaimer {
+            background: #FAFAFA;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .disclaimer-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer p {
+            font-size: 13px;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header { padding: 40px 24px 35px; }
+            .header h1 { font-size: 24px; }
+            .section-header { padding: 16px 20px; }
+            .section-body { padding: 20px; }
+            .info-table th,
+            .info-table td {
+                display: block;
+                width: 100%;
+                padding: 10px 14px;
+            }
+            .info-table th {
+                background: transparent;
+                padding-bottom: 2px;
+                border-bottom: none;
+                color: var(--primary-red);
+                font-size: 12px;
+            }
+            .info-table td {
+                padding-top: 2px;
+                padding-bottom: 14px;
+                border-bottom: 1px solid var(--border-light);
+            }
+        }
+
+        @media print {
+            body { background: white; }
+            .section {
+                box-shadow: none;
+                border: 1px solid #eee;
+                break-inside: avoid;
+            }
+            .header {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+        .section:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-badge">管理人画像文档</div>
+        <h1>北京正定私募基金管理合伙企业（有限合伙）</h1>
+        <div class="header-sub">私募基金管理人深度画像 · 内部代销评估参考</div>
+        <div class="header-date">生成日期：2026-07-20</div>
+    </div>
+
+    <div class="container">
+
+        <div class="section">
+            <div class="section-header">
+                <div class="icon">📋</div>
+                <h2>一、基本情况</h2>
+            </div>
+            <div class="section-body">
+                <table class="info-table">
+                    <tr>
+                        <th>公司全称</th>
+                        <td>北京正定私募基金管理合伙企业（有限合伙）</td>
+                    </tr>
+                    <tr>
+                        <th>管理规模</th>
+                        <td>约 230 亿元</td>
+                    </tr>
+                    <tr>
+                        <th>总体管理容量预估</th>
+                        <td>500–600 亿元</td>
+                    </tr>
+                    <tr>
+                        <th>核心人物 / 投研负责人</th>
+                        <td>蒋林浩</td>
+                    </tr>
+                    <tr>
+                        <th>核心人员背景</th>
+                        <td>
+                            2014 年本科毕业于清华大学计算机科学与技术专业，并获清华大学经济管理学院经济学学士双学位；2017 年获清华大学计算机科学与技术专业硕士学位。<br><br>
+                            2017 年 7 月 – 2019 年 2 月：深圳第一京广资产管理有限公司 高级量化研究员<br>
+                            2019 年 3 月 – 2020 年 7 月：北京平湖科技有限公司 经理<br>
+                            2020 年 8 月 – 2022 年 2 月：上海罡兴投资管理合伙企业（有限合伙） 执行事务合伙人<br>
+                            2022 年 3 月至今：北京正定私募基金管理合伙企业（有限合伙） 执行事务合伙人
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>全策略线</th>
+                        <td>市场中性策略、中证500指数增强策略、中证1000指数增强策略、中证A500指数增强策略、沪深300指数增强策略、中证2000指数增强、量化选股策略</td>
+                    </tr>
+                </table>
+
+                <h3 style="font-size: 15px; color: var(--dark-red); margin: 24px 0 12px; font-weight: 700;">核心竞争优势 / 护城河</h3>
+                <ul class="advantages">
+                    <li>创业以来坚持的精英人才战略带来了极高的人才密度；</li>
+                    <li>长期积累的技术壁垒和多元化的业务布局使得公司可持续经营能力较强，盈利能力好，可以支撑持续投入发展；</li>
+                    <li>出色的产品竞争力和诚信务实的处事风格带来了很好的品牌影响力和市场口碑，持续吸引更多精英人才和合作伙伴。</li>
+                </ul>
+
+                <div class="tagline-box">
+                    <div class="tagline-label">管理人一句话标签</div>
+                    <div class="tagline-text">公司以极致技术追求为导向，打造精品化配置的人才队伍，致力于成为国际一流技术水准的华人量化对冲基金公司。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="icon">🔬</div>
+                <h2>二、投研 & IT</h2>
+            </div>
+            <div class="section-body">
+                <table class="info-table">
+                    <tr><th>团队总人数</th><td>82</td></tr>
+                    <tr><th>投研人数</th><td>28</td></tr>
+                    <tr><th>IT / 技术人数</th><td>32</td></tr>
+                    <tr><th>核心团队人员稳定性</th><td>高</td></tr>
+                    <tr><th>近一年核心投研人员流动情况</th><td>无核心投研人员离职</td></tr>
+                    <tr><th>团队扩张计划</th><td>公司搭建了以 CPO（首席人才官）为核心的内部 HR 体系，推动公司内部人才培养及外部人才引入计划。未来公司成熟业务线核心岗位以内部培养为主，创新业务线辅以资深人才引入，匹配公司阶段性发展需求。</td></tr>
+                    <tr><th>交易系统</th><td>自研</td></tr>
+                    <tr><th>主要数据供应商</th><td>/</td></tr>
+                    <tr><th>算力 / 服务器情况</th><td>已搭建超算集群，算力储备十分充足</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="icon">📊</div>
+                <h2>三、策略情况</h2>
+            </div>
+            <div class="section-body">
+
+                <div class="strategy-block">
+                    <div class="strategy-title">3.1 中性策略 <span class="tag">市场中性</span></div>
+                    <table class="info-table">
+                        <tr><th>策略特点</th><td>空头端使用多种股指期货（IC / IF / IH / IM）合约灵活动态调整构建对冲组合，多头端严格风控对标空头持仓实现敞口对冲。策略注重绝对收益和回撤控制，力求剥离市场风险，获取纯粹的选股 α 收益。</td></tr>
+                        <tr><th>因子类型</th><td>价量因子</td></tr>
+                        <tr><th>持仓周期</th><td>平均 1–3 天</td></tr>
+                        <tr><th>风控模型特点</th><td>Barra 风格因子暴露一般控制在 0.2–0.3 个标准差，行业偏离度一般控制在 4–5%</td></tr>
+                        <tr><th>持股数量区间</th><td>1500–2000 支</td></tr>
+                        <tr><th>双边年化换手</th><td>100 倍</td></tr>
+                        <tr><th>当前策略规模</th><td>40 亿元</td></tr>
+                        <tr><th>策略容量估算</th><td>单策略容量 150–200 亿元</td></tr>
+                        <tr><th>与同类策略对比分位</th><td>运作以来年化收益排名约市场前 10% 分位</td></tr>
+                        <tr><th>业绩归因简述</th><td>超过 100% 的收益来源为 pure alpha</td></tr>
+                        <tr><th>最大回撤发生时段及原因</th><td>2024 年 2 月，遭遇行业流动性踩踏事件时面临短期较大幅度回撤，启动应急风控机制。基于市场环境及策略情况，最终公司通过调整选股池、仓位管理（仅针对中性策略）等方式显著降低净值波动，实现了预期的风控效果。</td></tr>
+                        <tr><th>适合市场环境</th><td>市场交投活跃程度较高、日内波动环境良好的市场下，当前策略发挥空间相对更充分</td></tr>
+                        <tr><th>主要策略风险点</th><td>主要来自于市场流动性、与对标基准的跟踪误差、风格收益的波动、基差波动等</td></tr>
+                    </table>
+                </div>
+
+                <div class="strategy-block">
+                    <div class="strategy-title">3.2 指增策略 <span class="tag">指数增强</span></div>
+                    <table class="info-table">
+                        <tr><th>对标指数</th><td>中证500、中证1000、中证A500、沪深300</td></tr>
+                        <tr><th>策略特点</th><td>以严格控制对标基准指数偏离风险为基础，在承担市场系统性风险的同时，通过深度学习量化模型优选个股、调整权重，力求持续获取超越基准指数的超额收益。</td></tr>
+                        <tr><th>因子类型</th><td>价量因子</td></tr>
+                        <tr><th>持仓周期</th><td>平均 1–3 天</td></tr>
+                        <tr><th>风控模型特点</th><td>指增策略 Barra 风格因子暴露一般控制在 0.2–0.3 个标准差，行业偏离度一般控制在 4–5%</td></tr>
+                        <tr><th>持股数量区间</th><td>800–2000 支</td></tr>
+                        <tr><th>双边年化换手</th><td>70–120 倍</td></tr>
+                        <tr><th>当前策略规模</th><td>143 亿元</td></tr>
+                        <tr><th>策略容量估算</th><td>单策略容量 150–200 亿元</td></tr>
+                        <tr><th>与同类策略对比分位</th><td>运作以来年化超额收益排名约市场前 15% 分位</td></tr>
+                        <tr><th>业绩归因简述</th><td>超过 100% 的收益来源为 pure alpha</td></tr>
+                        <tr><th>最大回撤发生时段及原因</th><td>2024 年 2 月，遭遇行业流动性踩踏事件时面临短期较大幅度回撤，启动应急风控机制。基于市场环境及策略情况，最终公司通过调整选股池、仓位管理（仅针对中性策略）等方式显著降低净值波动，实现了预期的风控效果。</td></tr>
+                        <tr><th>适合市场环境</th><td>市场交投活跃程度较高、日内波动环境良好的市场下，当前策略发挥空间相对更充分</td></tr>
+                        <tr><th>主要策略风险点</th><td>主要来自于市场流动性、与对标基准的跟踪误差、风格收益的波动、基差波动等</td></tr>
+                    </table>
+                </div>
+
+                <div class="strategy-block">
+                    <div class="strategy-title">3.3 量选策略 <span class="tag">量化选股</span></div>
+                    <table class="info-table">
+                        <tr><th>策略特点</th><td>通过深度学习量化模型在全市场范围内自由筛选并构建股票组合，不受任何特定指数的成分与权重约束，完全依托模型的预测能力捕捉个股上涨机会。以绝对收益目标导向，在控制下行风险的同时追求更强业绩弹性。</td></tr>
+                        <tr><th>因子类型</th><td>价量因子</td></tr>
+                        <tr><th>持仓周期</th><td>平均 1–3 天</td></tr>
+                        <tr><th>风控模型特点</th><td>参考中证全指作为风控基准，持仓极度分散，不赌行业与风格，整体持仓结构稳健均衡</td></tr>
+                        <tr><th>持股数量区间</th><td>约 2500 支</td></tr>
+                        <tr><th>双边年化换手</th><td>180 倍</td></tr>
+                        <tr><th>当前策略规模</th><td>40 亿元</td></tr>
+                        <tr><th>策略容量估算</th><td>单策略容量 150–200 亿元</td></tr>
+                        <tr><th>与同类策略对比分位</th><td>运作以来年化收益排名约市场前 10% 分位</td></tr>
+                        <tr><th>业绩归因简述</th><td>超过 80% 的收益来源为 pure alpha</td></tr>
+                        <tr><th>最大回撤发生时段及原因</th><td>2025 年 4 月，中美对等关税事件导致 A 股市场剧烈波动，对多头类产品造成较大净值波动。</td></tr>
+                        <tr><th>适合市场环境</th><td>市场交投活跃程度较高、日内波动环境良好的市场下，当前策略发挥空间相对更充分</td></tr>
+                        <tr><th>主要策略风险点</th><td>主要来自于市场流动性、与对标基准的跟踪误差、风格收益的波动、基差波动等</td></tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="icon">🤝</div>
+                <h2>四、代销规划</h2>
+            </div>
+            <div class="section-body">
+                <div class="strategy-title" style="margin-bottom: 16px;">4.1 主要合作渠道（券商 / 银行及规模）</div>
+                <table class="info-table">
+                    <tr><th>国泰海通证券</th><td>37 亿元</td></tr>
+                    <tr><th>中信证券</th><td>15 亿元</td></tr>
+                    <tr><th>中信建投证券</th><td>7 亿元</td></tr>
+                    <tr><th>中金证券</th><td>22 亿元</td></tr>
+                    <tr><th>招商银行</th><td>21 亿元</td></tr>
+                </table>
+
+                <div class="strategy-title" style="margin-top: 28px; margin-bottom: 16px;">4.2 26 年下半年及 27 年期望合作策略</div>
+                <p style="color: var(--text-gray); font-size: 14px; padding-left: 4px;">在审慎募集资金的前提下，全策略线代销侧布局。</p>
+
+                <div class="strategy-title" style="margin-top: 28px; margin-bottom: 16px;">4.3 其他需要补充的内容</div>
+                <p style="color: var(--text-gray); font-size: 14px; padding-left: 4px;">暂无。</p>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <div class="disclaimer-icon">⚠️</div>
+            <p>
+                <strong style="color: var(--text-gray);">免责声明</strong><br>
+                本文档基于管理人提供的画像资料整理，仅供内部代销评估参考，不构成投资建议。
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
