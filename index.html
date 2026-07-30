@@ -50,10 +50,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
 .card-footer{padding:0 20px 16px;display:flex;justify-content:space-between;align-items:center;}
 .card-btn{background:linear-gradient(135deg,var(--dark-red),var(--primary-red));color:white;padding:6px 16px;border-radius:6px;font-size:12px;font-weight:600;}
 .card-update{font-size:11px;color:var(--text-light);}
-.card-add{background:var(--bg-white);border-radius:12px;box-shadow:var(--shadow);border:2px dashed var(--border-light);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:35px 20px;min-height:240px;cursor:pointer;text-decoration:none;color:var(--text-light);transition:all 0.3s;}
-.card-add:hover{border-color:var(--primary-red);color:var(--primary-red);background:var(--light-red);}
-.card-add-icon{font-size:36px;margin-bottom:10px;}
-.card-add-text{font-size:13px;font-weight:500;}
 
 /* No Results */
 .no-results{text-align:center;padding:60px 20px;color:var(--text-light);display:none;}
@@ -74,7 +70,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
 <div class="header-badge">私募管理人画像库</div>
 <h1>中信建投财富 · 管理人画像</h1>
 <div class="header-sub">私募产品引入 · 代销评估 · 深度尽调</div>
-<div class="header-date">数据更新日期：2026-07-21</div>
+<div class="header-date">数据更新日期：2026-07-30</div>
 </div>
 <div class="container">
 
@@ -83,13 +79,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
 <span class="search-icon">🔍</span>
 <input type="text" class="search-input" id="searchInput" placeholder="搜索管理人名称、策略标签（如：量化、中性、指增）...">
 <span class="search-clear" id="searchClear">✕</span>
-<span class="search-count" id="searchCount">共 1 家</span>
+<span class="search-count" id="searchCount">共 6 家</span>
 </div>
 
 <div class="section-title">
 <div class="icon">📊</div>
 <h2>管理人目录</h2>
-<span class="count" id="totalCount">当前收录 1 家</span>
+<span class="count" id="totalCount">当前收录 6 家</span>
 </div>
 
 <div class="cards-grid" id="cardsGrid">
@@ -108,13 +104,108 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
 <div class="stat"><div class="stat-label">管理规模</div><div class="stat-value">230 亿</div></div>
 <div class="stat"><div class="stat-label">团队人数</div><div class="stat-value">82 人</div></div>
 </div>
-<div class="card-desc">清华系量化团队，以极致技术追求为导向，打造精品化配置的人才队伍。策略覆盖市场中性、500/1000/A500/300指增、量化选股全产品线。</div>
+<div class="card-desc">公司以极致技术追求为导向，打造精品化配置的人才队伍，致力于成为国际一流技术水准的华人量化对冲基金公司。</div>
 </div>
 <div class="card-footer"><span class="card-btn">查看详情 →</span><span class="card-update">2026-07-20</span></div>
 </a>
 
-<a href="#" class="card-add" onclick="alert('待补充');return false;"><div class="card-add-icon">➕</div><div class="card-add-text">添加管理人</div></a>
-<a href="#" class="card-add" onclick="alert('待补充');return false;"><div class="card-add-icon">➕</div><div class="card-add-text">添加管理人</div></a>
+<a href="./aifang/" class="card" data-name="上海艾方资产" data-tags="波动率均衡 量化可转债 量化CTA">
+<div class="card-header">
+<div class="card-name"><span class="status"></span>上海艾方资产</div>
+<div class="card-tags">
+<span class="card-tag">波动率均衡</span>
+<span class="card-tag">量化可转债</span>
+<span class="card-tag">量化CTA</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-stats">
+<div class="stat"><div class="stat-label">管理规模</div><div class="stat-value">55 亿</div></div>
+<div class="stat"><div class="stat-label">团队人数</div><div class="stat-value">20 人</div></div>
+</div>
+<div class="card-desc">14年老牌量化私募，多资产多策略的深度实践者。以严格的风控纪律及科学配置模型打造覆盖股票转债期货期权等投资策略组合。</div>
+</div>
+<div class="card-footer"><span class="card-btn">查看详情 →</span><span class="card-update">2026-07-30</span></div>
+</a>
+
+<a href="./jiukun/" class="card" data-name="九坤投资" data-tags="A500指增 500指增 1000指增 股票优选 量化对冲 CTA">
+<div class="card-header">
+<div class="card-name"><span class="status"></span>九坤投资</div>
+<div class="card-tags">
+<span class="card-tag">A500指增</span>
+<span class="card-tag">500指增</span>
+<span class="card-tag">量化对冲</span>
+<span class="card-tag">CTA</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-stats">
+<div class="stat"><div class="stat-label">管理规模</div><div class="stat-value">890 亿</div></div>
+<div class="stat"><div class="stat-label">团队人数</div><div class="stat-value">178 人</div></div>
+</div>
+<div class="card-desc">立足前沿科技，深度融合数据科学、计算机技术、人工智能等领域的成果的中国一线量化私募管理人。</div>
+</div>
+<div class="card-footer"><span class="card-btn">查看详情 →</span><span class="card-update">2026-07-30</span></div>
+</a>
+
+<a href="./junfu/" class="card" data-name="杭州钧富投资" data-tags="宏观多资产 风险平价 全天候">
+<div class="card-header">
+<div class="card-name"><span class="status"></span>杭州钧富投资</div>
+<div class="card-tags">
+<span class="card-tag">宏观多资产</span>
+<span class="card-tag">风险平价</span>
+<span class="card-tag">全天候</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-stats">
+<div class="stat"><div class="stat-label">管理规模</div><div class="stat-value">86 亿</div></div>
+<div class="stat"><div class="stat-label">团队人数</div><div class="stat-value">44 人</div></div>
+</div>
+<div class="card-desc">国内前沿的宏观多资产多策略量化管理人，通过持续挖掘低相关性的大类资产和底层技术，降低整个组合的波动率。</div>
+</div>
+<div class="card-footer"><span class="card-btn">查看详情 →</span><span class="card-update">2026-07-30</span></div>
+</a>
+
+<a href="./longqi/" class="card" data-name="杭州龙旗科技" data-tags="指数增强 股票精选 量化择时 市场中性">
+<div class="card-header">
+<div class="card-name"><span class="status"></span>杭州龙旗科技</div>
+<div class="card-tags">
+<span class="card-tag">指数增强</span>
+<span class="card-tag">股票精选</span>
+<span class="card-tag">量化择时</span>
+<span class="card-tag">市场中性</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-stats">
+<div class="stat"><div class="stat-label">管理规模</div><div class="stat-value">600 亿</div></div>
+<div class="stat"><div class="stat-label">团队人数</div><div class="stat-value">71 人</div></div>
+</div>
+<div class="card-desc">打造着眼于长期收益、能够给客户带来良好投资体验的产品是龙旗一直追求的使命与目标，也是龙旗的初心所在。</div>
+</div>
+<div class="card-footer"><span class="card-btn">查看详情 →</span><span class="card-update">2026-07-30</span></div>
+</a>
+
+<a href="./yanfu/" class="card" data-name="上海衍复投资" data-tags="300指增 A500指增 500指增 1000指增 小市值指增 完全对冲">
+<div class="card-header">
+<div class="card-name"><span class="status"></span>上海衍复投资</div>
+<div class="card-tags">
+<span class="card-tag">300指增</span>
+<span class="card-tag">500指增</span>
+<span class="card-tag">1000指增</span>
+<span class="card-tag">完全对冲</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-stats">
+<div class="stat"><div class="stat-label">管理规模</div><div class="stat-value">850 亿</div></div>
+<div class="stat"><div class="stat-label">团队人数</div><div class="stat-value">80 人</div></div>
+</div>
+<div class="card-desc">超额收益稳、夏普高，为投资者提供长期可持续的Pure Alpha。Alpha因子质量高、相关性地、业绩可解释能力强。</div>
+</div>
+<div class="card-footer"><span class="card-btn">查看详情 →</span><span class="card-update">2026-07-30</span></div>
+</a>
 
 </div>
 
@@ -129,55 +220,48 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
 
 <script>
 (function(){
-  const input = document.getElementById('searchInput');
-  const clearBtn = document.getElementById('searchClear');
-  const grid = document.getElementById('cardsGrid');
-  const noResults = document.getElementById('noResults');
-  const searchCount = document.getElementById('searchCount');
-  const totalCount = document.getElementById('totalCount');
-  const cards = Array.from(grid.querySelectorAll('.card'));
-  const total = cards.length;
+  var input = document.getElementById("searchInput");
+  var clearBtn = document.getElementById("searchClear");
+  var grid = document.getElementById("cardsGrid");
+  var noResults = document.getElementById("noResults");
+  var searchCount = document.getElementById("searchCount");
+  var totalCount = document.getElementById("totalCount");
+  var cards = Array.from(grid.querySelectorAll(".card"));
+  var total = cards.length;
 
   function filter() {
-    const query = input.value.trim().toLowerCase();
-    let visible = 0;
+    var query = input.value.trim().toLowerCase();
+    var visible = 0;
 
-    if (query.length > 0) {
-      clearBtn.style.display = 'inline';
-    } else {
-      clearBtn.style.display = 'none';
-    }
+    clearBtn.style.display = query.length > 0 ? "inline" : "none";
 
     cards.forEach(function(card) {
-      const name = (card.dataset.name || '').toLowerCase();
-      const tags = (card.dataset.tags || '').toLowerCase();
-      const desc = card.querySelector('.card-desc');
-      const descText = desc ? desc.textContent.toLowerCase() : '';
+      var name = (card.dataset.name || "").toLowerCase();
+      var tags = (card.dataset.tags || "").toLowerCase();
+      var desc = card.querySelector(".card-desc");
+      var descText = desc ? desc.textContent.toLowerCase() : "";
 
-      if (name.includes(query) || tags.includes(query) || descText.includes(query)) {
-        card.style.display = '';
+      if (name.indexOf(query) >= 0 || tags.indexOf(query) >= 0 || descText.indexOf(query) >= 0) {
+        card.style.display = "";
         visible++;
       } else {
-        card.style.display = 'none';
+        card.style.display = "none";
       }
     });
 
-    const adds = grid.querySelectorAll('.card-add');
-    adds.forEach(function(a){ a.style.display = query.length > 0 ? 'none' : ''; });
-
     if (visible === 0 && query.length > 0) {
-      noResults.style.display = 'block';
+      noResults.style.display = "block";
     } else {
-      noResults.style.display = 'none';
+      noResults.style.display = "none";
     }
 
-    searchCount.textContent = query.length > 0 ? '找到 ' + visible + ' 家' : '共 ' + total + ' 家';
-    totalCount.textContent = query.length > 0 ? '搜索结果' : '当前收录 ' + total + ' 家';
+    searchCount.textContent = query.length > 0 ? "找到 " + visible + " 家" : "共 " + total + " 家";
+    totalCount.textContent = query.length > 0 ? "搜索结果" : "当前收录 " + total + " 家";
   }
 
-  input.addEventListener('input', filter);
-  clearBtn.addEventListener('click', function(){
-    input.value = '';
+  input.addEventListener("input", filter);
+  clearBtn.addEventListener("click", function(){
+    input.value = "";
     filter();
     input.focus();
   });
